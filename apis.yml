@@ -1,7 +1,14 @@
 aid: anywhere-2-go
 name: Anywhere 2 Go
-description: Anywhere 2 Go is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Anywhere 2 Go Co., Ltd. is a Bangkok, Thailand insurtech company and the maker of Claim Di, a mobile
+  application ecosystem that streamlines motor insurance claims and vehicle inspection between drivers,
+  independent surveyors, and insurance companies. Its flagship "Shake and Go" (K4K) feature lets two
+  Claim Di users resolve minor accidents on the spot, while Emergency Alert, self-service Car Inspection,
+  photo-based Non-Accident Claims, and the Claim Di Bike surveyor-dispatch program cut claim processing
+  time and help insurers reduce fraud. The company is a 500 Global portfolio company. Claim Di is a
+  consumer/B2B mobile product (iOS and Android); no public developer API or documentation surface was
+  found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/anywhere-2-go/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+x-enriched: '2026-07-17'
+image: https://claimdi.com/includes/images/favicon.png
 tags:
 - Company
+- Insurance
+- InsurTech
+- Claims
+- Automotive
+- Mobile
+- Thailand
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/anywhere-2-go-domain-security.yml
 - type: Website
   url: https://claimdi.com
+- type: Blog
+  url: https://claimdi.com/news/
+- type: PrivacyPolicy
+  url: https://claimdi.com/policy/TH/ClaimdiPrivacyPolicy.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
